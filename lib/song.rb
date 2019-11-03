@@ -5,7 +5,8 @@ class Song
 
   def initialize(song)
     @song = song 
-    
+      song  = Song.create 
+   Song.all.include?(song)
   end 
 
   def self.all
@@ -21,8 +22,8 @@ class Song
 
 end
 
-    song  = Song.create 
-   Song.all.include?(song)
+  #   song  = Song.create 
+  # Song.all.include?(song)
   
   
   
