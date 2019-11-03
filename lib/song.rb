@@ -3,6 +3,10 @@ class Song
   
   @@all = []
 
+  def initialize(song)
+    @song = song 
+  end 
+
   def self.all
     @@all
   end
@@ -16,5 +20,7 @@ class Song
 
 end
 
-song = Song.create 
-  Song.all.include?(song)
+  
+  
+  
+  
