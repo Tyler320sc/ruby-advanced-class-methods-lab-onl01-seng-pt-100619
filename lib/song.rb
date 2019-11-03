@@ -11,8 +11,8 @@ class Song
     self.class.all << self
   end
 
-  #  = Song.create 
-  # Song.all.include?()
+  song  = Song.create 
+   Song.all.include?(song)
 
 end
 
