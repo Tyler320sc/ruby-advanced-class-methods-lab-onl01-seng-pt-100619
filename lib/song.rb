@@ -3,6 +3,10 @@ class Song
   
   @@all = []
 
+  def initialize(song)
+    
+  end 
+
   def self.all
     @@all
   end
@@ -21,4 +25,13 @@ end
    Song.all.include?(song)
    
   
-  
+#   But you need to return the son
+# User avatar
+# Benjamin Aschenbrenner 2 MINUTES AGO
+# Which may mean you need to a) instantiate it and save it under a variable name
+# User avatar
+# Benjamin Aschenbrenner 2 MINUTES AGO
+# b) shovel it into the @@all
+# User avatar
+# Benjamin Aschenbrenner 2 MINUTES AGO
+# c) return it
