@@ -17,6 +17,15 @@ class Song
   song 
   end 
   
+  def self.new_by_name(new_song)
+    song = self.create
+    song.name = new_song
+    song 
+  end 
+  
+  def self.find_by_name(song_name)
+  end 
+  
 end
 
   # song  = Song.create 
