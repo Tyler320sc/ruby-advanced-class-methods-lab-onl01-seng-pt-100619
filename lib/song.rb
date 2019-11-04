@@ -42,21 +42,16 @@ class Song
     song 
   end 
   
+    def self.create_from_filename(filename)
+    song = self.new
+    song.name = (filename.split(" - ")[1].chomp(".mp3"))
+    song.artist_name = (filename.split(" - ")[0])
+    @@all << song
+    song 
+  end 
   
+  def self.destroy_all
+    @@all.clear 
+  end 
   
 end
-
-  # song  = Song.create 
-  # Song.all.include?(song)
-   
-  
-#   But you need to return the son
-# User avatar
-# Benjamin Aschenbrenner 2 MINUTES AGO
-# Which may mean you need to a) instantiate it and save it under a variable name
-# User avatar
-# Benjamin Aschenbrenner 2 MINUTES AGO
-# b) shovel it into the @@all
-# User avatar
-# Benjamin Aschenbrenner 2 MINUTES AGO
-# c) return it
