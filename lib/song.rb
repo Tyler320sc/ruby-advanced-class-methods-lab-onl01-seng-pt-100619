@@ -21,8 +21,8 @@ class Song
   
 end
 
-   song  = Song.create 
-   Song.all.include?(song)
+  # song  = Song.create 
+  # Song.all.include?(song)
    
   
 #   But you need to return the son
